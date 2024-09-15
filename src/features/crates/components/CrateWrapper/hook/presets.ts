@@ -1,0 +1,9 @@
+export const TRANSITION_DURATION = 800
+export const OPENING_DURATION = 500
+export const TRANSITION_THRESHOLD = 0.8
+export const COMPLETION_THRESHOLD = 0.55
+
+export const ROTATION_DEGREE = 180
+export const REPEAT_DELAY = 1200
+export const ROTATION_TIP_OFFSET = 2
+export const ROTATION_DURATION = 1750

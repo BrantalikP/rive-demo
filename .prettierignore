@@ -1,0 +1,3 @@
+pnpm-lock.yaml
+src/api/generated/*
+!src/api/generated/apiFetcher.ts
