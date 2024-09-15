@@ -71,7 +71,7 @@ const expoConfig: ExpoConfig = {
   name,
   slug: 'rive-demo',
   version,
-  owner: 'rive-demo',
+  owner: 'grounip',
   runtimeVersion: {
     policy: 'sdkVersion',
   },
