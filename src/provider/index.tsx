@@ -1,6 +1,5 @@
 import { useMMKVDevTools } from '@dev-plugins/react-native-mmkv'
 import { ThemeProvider } from '@shopify/restyle'
-import { QueryClientProvider } from '@tanstack/react-query'
 import * as dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import { useFonts } from 'expo-font'
@@ -9,7 +8,6 @@ import React, { PropsWithChildren, useEffect } from 'react'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import { RootSiblingParent } from 'react-native-root-siblings'
 
-import { queryClient } from '~/api/query-client'
 import { ForcedUpdate } from '~/components/ForcedUpdate'
 import { OfflineMessage } from '~/components/OfflineMessage'
 // We need to import the theme from the theme file directly
@@ -46,11 +44,9 @@ export const Provider = ({ children }: PropsWithChildren) => {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ThemeProvider theme={theme}>
         <RootSiblingParent>
-          <QueryClientProvider client={queryClient}>
-            {children}
-            {isAppOutdated && <ForcedUpdate />}
-            {isOnline === false && <OfflineMessage />}
-          </QueryClientProvider>
+          {children}
+          {isAppOutdated && <ForcedUpdate />}
+          {isOnline === false && <OfflineMessage />}
         </RootSiblingParent>
       </ThemeProvider>
     </GestureHandlerRootView>

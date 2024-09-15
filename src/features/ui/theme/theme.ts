@@ -10,7 +10,7 @@ const colors = {
   primary: palette.green,
   secondary: palette.blue,
 
-  textPrimary: palette.black,
+  textPrimary: palette.cyanTurquoise,
   textPrimary2: palette.black60,
   textSecondary: palette.black50,
 
@@ -267,99 +267,6 @@ export const theme = createTheme({
       color: 'textPrimary',
       fontWeight: 400,
       letterSpacing: -0.15,
-    },
-  },
-  buttonVariants: {
-    defaults: {
-      paddingVertical: 'sm',
-      paddingHorizontal: 'l',
-      borderWidth: 2,
-      borderRadius: 'm',
-      height: ms(56),
-    },
-    default: {
-      backgroundColor: 'green',
-      borderColor: 'greenDarker',
-    },
-    light: {
-      backgroundColor: 'white',
-      borderColor: 'beigeDarker',
-    },
-    rounded: {
-      paddingVertical: 0,
-      paddingHorizontal: 0,
-      backgroundColor: 'beigeSubdued',
-      borderColor: 'beigeDarker',
-      borderRadius: 'round',
-      width: ms(45),
-      height: ms(45),
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    backButton: {
-      paddingVertical: 0,
-      paddingHorizontal: 0,
-      backgroundColor: 'white',
-      borderColor: 'beigeDarker',
-      borderRadius: 'm',
-      width: ms(40),
-      height: ms(40),
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    square: {
-      paddingVertical: 0,
-      paddingHorizontal: 0,
-      backgroundColor: 'beigeSubdued',
-      borderColor: 'beigeDarker',
-      width: ms(72),
-      height: ms(72),
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    striped: {
-      backgroundColor: 'white',
-      borderColor: 'beigeDarker',
-      overflow: 'hidden',
-    },
-  },
-  inputVariants: {
-    defaults: {
-      backgroundColor: 'white',
-      borderColor: 'beigeDarker',
-      borderWidth: 2,
-    },
-    default: {},
-    rounded: { borderRadius: 'm' },
-    compoundTop: { borderTopLeftRadius: 'm', borderTopRightRadius: 'm' },
-    compoundBottom: {
-      borderBottomLeftRadius: 'm',
-      borderBottomRightRadius: 'm',
-      borderTopWidth: 0,
-    },
-  },
-  otpInputVariants: {
-    defaults: {
-      minWidth: ms(58),
-      height: ms(64),
-      borderWidth: ms(2),
-      borderColor: 'beigeDarker',
-      textAlign: 'center',
-      flex: 1,
-      fontSize: ms(20),
-      backgroundColor: 'white',
-    },
-    firstInput: {
-      borderTopLeftRadius: 'm',
-      borderBottomLeftRadius: 'm',
-    },
-    middleInput: {
-      borderLeftWidth: 0,
-    },
-    lastInput: {
-      borderTopRightRadius: 'm',
-      borderBottomRightRadius: 'm',
-      borderLeftWidth: 0,
     },
   },
 })

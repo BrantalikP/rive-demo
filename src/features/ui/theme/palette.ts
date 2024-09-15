@@ -44,4 +44,6 @@ export const palette = {
   world: '#5AC6CE',
 
   labsLight: '#fff088',
+
+  cyanTurquoise: '#00FFD8',
 }

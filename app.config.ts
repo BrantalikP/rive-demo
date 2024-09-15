@@ -21,22 +21,13 @@ const fonts = [
   './assets/fonts/CentraNo2-BookItalic.otf',
 ]
 
-// prefetched/embedded assets, can be referenced as source='rn_meme' https://docs.expo.dev/versions/latest/sdk/asset/#configurable-properties
-// TODO: fix imagine background to use expo assets and remove '-' from name due to android issue
-// const assets = [
-//   './src/features/profiles/assets/profile-1.png',
-//   './src/features/profiles/assets/profile-2.png',
-//   './src/features/profiles/assets/profile-3.png',
-//   './src/features/profiles/assets/profile-4.png',
-// ]
-
 const getEnvironmentInfo = (): {
   name: ExpoConfig['name']
   appIdentifier: IOS['bundleIdentifier']
   icon: ExpoConfig['icon']
 } => {
-  const appIdentifier = 'com.kiwico.app'
-  const appName = 'KiwiCo'
+  const appIdentifier = 'com.grounip.rive.app'
+  const appName = 'RiveDemo'
 
   if (environment === 'production')
     return {
@@ -57,7 +48,6 @@ const { name, appIdentifier, icon } = getEnvironmentInfo()
 const plugins: ExpoConfig['plugins'] = [
   ['expo-build-properties'],
   ['expo-font', { fonts }],
-  // ['expo-asset', { assets }],
   ['expo-router'],
   [
     'expo-build-properties',
@@ -79,13 +69,13 @@ const otaUpdatePriority: OtaUpdatePriority = 'normal'
 
 const expoConfig: ExpoConfig = {
   name,
-  slug: 'kiwico',
+  slug: 'rive-demo',
   version,
-  owner: 'kiwico',
+  owner: 'rive-demo',
   runtimeVersion: {
     policy: 'sdkVersion',
   },
-  scheme: 'kiwico',
+  scheme: 'rive-demo',
   orientation: 'portrait',
   icon,
   userInterfaceStyle: 'light',
@@ -96,7 +86,6 @@ const expoConfig: ExpoConfig = {
   },
   updates: {
     fallbackToCacheTimeout,
-    url: 'https://u.expo.dev/8edeb603-82ab-404d-b746-86d5df27e831',
   },
   assetBundlePatterns: ['**/*'],
   ios: {
@@ -133,7 +122,7 @@ const expoConfig: ExpoConfig = {
     fallbackToCacheTimeout,
     otaUpdatePriority,
     eas: {
-      projectId: '8edeb603-82ab-404d-b746-86d5df27e831',
+      projectId: 'e3053b92-6822-4c5c-b91e-1ed5eb688595',
     },
   },
   experiments: {
