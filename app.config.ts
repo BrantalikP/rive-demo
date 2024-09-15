@@ -80,9 +80,9 @@ const expoConfig: ExpoConfig = {
   icon,
   userInterfaceStyle: 'light',
   splash: {
-    image: './assets/splash.png',
+    image: './assets/splash.jpg',
     resizeMode: 'contain',
-    backgroundColor: '#00B261',
+    backgroundColor: '#ffffff',
   },
   updates: {
     fallbackToCacheTimeout,

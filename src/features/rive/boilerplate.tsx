@@ -24,7 +24,7 @@ export const UploadScreen = () => {
               stopUploading()
             }
             if (stateName === 'uploading') {
-              startUploading()
+              void startUploading()
             }
           }}
         />

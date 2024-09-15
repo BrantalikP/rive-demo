@@ -4,7 +4,7 @@ import { useRef, useState } from 'react'
 import { RiveRef } from 'rive-react-native'
 
 export const useUpload = () => {
-  const [assets, error] = useAssets([require('../assets/rive_demo_test.riv')])
+  const [assets, error] = useAssets([require('../assets/rive_demo.riv')])
   const animationUrl = assets?.[0].localUri
   const [isUploading, setIsUploading] = useState<boolean>(false)
   const riveRef = useRef<RiveRef>(null)
