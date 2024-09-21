@@ -9,9 +9,6 @@ export const useUpload = () => {
   const [isUploading, setIsUploading] = useState<boolean>(false)
   const riveRef = useRef<RiveRef>(null)
   const [progress, setProgress] = useState<number>(0)
-  const easeInOutQuad = (t: number) => {
-    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t
-  }
 
   const startUploading = async () => {
     await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Rigid)
