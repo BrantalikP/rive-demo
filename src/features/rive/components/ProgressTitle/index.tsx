@@ -11,7 +11,7 @@ export const ProgressTitle = ({ isUploading, progress }: IProgressTitle) => {
       variant="hxl"
       mb="4xl"
       style={{
-        transform: [{ scale: 1.3 }],
+        transform: [{ scale: 1.1 }],
       }}
     >
       {/* eslint-disable-next-line no-nested-ternary */}
