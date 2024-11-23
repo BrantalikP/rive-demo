@@ -6,7 +6,7 @@ import { RiveRef } from 'rive-react-native'
 import { easeInOutQuad } from '~/features/rive/utils'
 
 export const useUpload = () => {
-  const [assets, error] = useAssets([require('../assets/rive_demo.riv')])
+  const [assets, error] = useAssets([require('../assets/button.riv')])
   const animationUrl = assets?.[0].localUri
   const [isUploading, setIsUploading] = useState<boolean>(false)
   const riveRef = useRef<RiveRef>(null)
