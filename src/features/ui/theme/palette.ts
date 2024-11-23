@@ -46,4 +46,6 @@ export const palette = {
   labsLight: '#fff088',
 
   cyanTurquoise: '#00FFD8',
+
+  blueSky: '#62CFF4',
 }

@@ -7,7 +7,13 @@ interface IProgressTitle {
 
 export const ProgressTitle = ({ isUploading, progress }: IProgressTitle) => {
   return (
-    <Text variant="hxl" mb="4xl">
+    <Text
+      variant="hxl"
+      mb="4xl"
+      style={{
+        transform: [{ scale: 1.3 }],
+      }}
+    >
       {/* eslint-disable-next-line no-nested-ternary */}
       {isUploading ? (progress >= 100 ? 'Uploaded' : `${progress}%`) : 'Start Uploading'}
     </Text>

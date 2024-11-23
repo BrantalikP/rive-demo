@@ -10,7 +10,7 @@ const colors = {
   primary: palette.green,
   secondary: palette.blue,
 
-  textPrimary: palette.cyanTurquoise,
+  textPrimary: palette.white,
   textPrimary2: palette.black60,
   textSecondary: palette.black50,
 

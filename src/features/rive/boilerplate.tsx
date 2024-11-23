@@ -4,6 +4,7 @@ import { useUpload } from './hooks/useUploadBoilerplate'
 
 import { ProgressTitle } from '~/features/rive/components/ProgressTitle'
 import { Box } from '~/features/ui/components/Box'
+import { HEIGHT, WIDTH } from '~/features/rive/presets'
 
 export const UploadScreen = () => {
   const { animationUrl, isUploading, riveRef, progress, startUploading, stopUploading } =
@@ -13,7 +14,7 @@ export const UploadScreen = () => {
   return (
     <Box alignItems="center" justifyContent="center" flex={1} backgroundColor="black">
       <ProgressTitle isUploading={isUploading} progress={progress} />
-      <Box style={{ width: 142, height: 62 }}>
+      <Box style={{ width: WIDTH, height: HEIGHT }}>
         <Rive
           fit={Fit.Contain}
           ref={riveRef}
