@@ -5,6 +5,7 @@ import { useUpload } from './hooks/useUploadBoilerplate'
 import { ProgressTitle } from '~/features/rive/components/ProgressTitle'
 import { Box } from '~/features/ui/components/Box'
 import { HEIGHT, WIDTH } from '~/features/rive/presets'
+import * as Haptics from 'expo-haptics'
 
 export const UploadScreen = () => {
   const { animationUrl, isUploading, riveRef, progress, startUploading, stopUploading } =
@@ -26,6 +27,9 @@ export const UploadScreen = () => {
             }
             if (stateName === 'uploading') {
               void startUploading()
+            }
+            if (stateName === 'init-animation') {
+              void Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Rigid)
             }
           }}
         />

@@ -1,5 +1,4 @@
 import { useAssets } from 'expo-asset'
-import * as Haptics from 'expo-haptics'
 import { useRef, useState } from 'react'
 import { RiveRef } from 'rive-react-native'
 
@@ -14,8 +13,6 @@ export const useUpload = () => {
   }
 
   const startUploading = async () => {
-    await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Rigid)
-
     let startTime: number | null = null
     const duration = 8000
     setIsUploading(true)
